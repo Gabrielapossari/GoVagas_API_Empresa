@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GoVagas</name>
+    </assembly>
+    <members>
+        <member name="T:GoVagas.Controllers.EmpresaController">
+            <summary>
+            Controller responsável pelos endpoints referentes a empresa
+            </summary>
+        </member>
+        <member name="F:GoVagas.Controllers.EmpresaController._empresaRepository">
+            <summary>
+            Cria um objeto empresaRepository que irá receber todos os métodos definidos na interface
+            </summary>
+        </member>
+        <member name="M:GoVagas.Controllers.EmpresaController.#ctor">
+            <summary>
+            Instancia este objeto para que haja a referência aos métodos no repositório
+            </summary>
+        </member>
+        <member name="M:GoVagas.Controllers.EmpresaController.Get">
+            <summary>
+            Lista todas as empresas
+            </summary>
+            <returns>Uma lista de eventos e um status code 200 - Ok</returns>
+            <response code="200">Retorna uma lista de empresas</response>
+            <response code="400">Retorna o erro gerado</response>
+            dominio/api/Empresa
+        </member>
+        <member name="M:GoVagas.Controllers.EmpresaController.Post(GoVagas.Domains.Empresa)">
+            <summary>
+            Cadastra uma nova empresa
+            </summary>
+            <param name="novaEmpresa">Objeto com as informações</param>
+            <returns>Um status code 201 - Created</returns>
+        </member>
+        <member name="M:GoVagas.Controllers.EmpresaController.GetById(System.Int32)">
+            <summary>
+            Busca uma empresa através do ID
+            </summary>
+            <param name="id">ID da empresa que será buscado</param>
+            <returns>Uma empresa buscado e um status code 200 - Ok</returns>
+            <response code="200">Retorna uma empresa buscado</response>
+            <response code="404">Retorna uma mensagem de erro</response>
+            <response code="400">Retorna o erro gerado</response>
+            dominio/api/Empresa/id
+        </member>
+        <member name="M:GoVagas.Controllers.EmpresaController.Put(System.Int32,GoVagas.Domains.Empresa)">
+            <summary>
+            Atualiza uma empresa existente
+            </summary>
+            <param name="id">ID da empresa que será atualizado</param>
+            <param name="empresaAtualizado">Objeto com as novas informações</param>
+            <returns>Um status code 204 - No Content</returns>
+            <response code="204">Retorna apenas o status code No Content</response>
+            <response code="404">Retorna uma mensagem de erro</response>
+            <response code="400">Retorna o erro gerado</response>
+            dominio/api/Empresa/id
+        </member>
+        <member name="M:GoVagas.Controllers.EmpresaController.Delete(System.Int32)">
+            <summary>
+            Deleta uma empresa
+            </summary>
+            <param name="id">ID da empresa que será deletado</param>
+            <returns>Um status code 202 - Accepted</returns>
+            <response code="202">Retorna apenas o status code Accepted</response>
+            <response code="404">Retorna uma mensagem de erro</response>
+            <response code="400">Retorna o erro gerado</response>
+            dominio/api/Empresa/id
+        </member>
+        <member name="M:GoVagas.Interfaces.IEmpresaRepository.Listar">
+            <summary>
+            Lista todas as empresas
+            </summary>
+            <returns>Uma lista de empresas</returns>
+        </member>
+        <member name="M:GoVagas.Interfaces.IEmpresaRepository.Cadastrar(GoVagas.Domains.Empresa)">
+            <summary>
+            Cadastra uma nova empresa
+            </summary>
+            <param name="novaEmpresa">Objeto com as informações de cadastro</param>
+        </member>
+        <member name="M:GoVagas.Interfaces.IEmpresaRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Busca uma empresa por ID
+            </summary>
+            <param name="id">ID da empresa que será buscado</param>
+            <returns>Uma empresa buscada</returns>
+        </member>
+        <member name="M:GoVagas.Interfaces.IEmpresaRepository.Atualizar(System.Int32,GoVagas.Domains.Empresa)">
+            <summary>
+            Atualiza uma empresa existente
+            </summary>
+            <param name="id">ID da empresa que será atualizado</param>
+            <param name="empresaAtualizado">Objeto com as novas informações</param>
+        </member>
+        <member name="M:GoVagas.Interfaces.IEmpresaRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta uma empresa
+            </summary>
+            <param name="id">ID da empresa que será deletado</param>
+        </member>
+        <member name="M:GoVagas.Repositories.EmpresaRepository.Cadastrar(GoVagas.Domains.Empresa)">
+            <summary>
+            Cadastra um novo empresa
+            </summary>
+            <param name="novaEmpresa">Objeto com as informações de cadastro</param>
+        </member>
+        <member name="M:GoVagas.Repositories.EmpresaRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Busca uma empresa por ID
+            </summary>
+            <param name="id">ID da empresa que será buscado</param>
+            <returns>Uma empresa buscada</returns>
+        </member>
+        <member name="M:GoVagas.Repositories.EmpresaRepository.Atualizar(System.Int32,GoVagas.Domains.Empresa)">
+            <summary>
+            Atualiza uma empresa existente
+            </summary>
+            <param name="id">ID da empresa  que será atualizado</param>
+            <param name="empresaAtualizado">Objeto com as novas informações</param>
+        </member>
+    </members>
+</doc>
