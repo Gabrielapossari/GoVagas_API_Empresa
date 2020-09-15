@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\GABRIELA\\Desktop\\GoVagas_API_Empresa\\GoVagas\\GoVagas.csproj": {}
+    "C:\\Users\\GABRIELA\\Documents\\SENAI\\FrameWorkOfCoders\\Back-End\\API\\GoVagas\\GoVagas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\GABRIELA\\Desktop\\GoVagas_API_Empresa\\GoVagas\\GoVagas.csproj": {
+    "C:\\Users\\GABRIELA\\Documents\\SENAI\\FrameWorkOfCoders\\Back-End\\API\\GoVagas\\GoVagas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\GABRIELA\\Desktop\\GoVagas_API_Empresa\\GoVagas\\GoVagas.csproj",
+        "projectUniqueName": "C:\\Users\\GABRIELA\\Documents\\SENAI\\FrameWorkOfCoders\\Back-End\\API\\GoVagas\\GoVagas.csproj",
         "projectName": "GoVagas",
-        "projectPath": "C:\\Users\\GABRIELA\\Desktop\\GoVagas_API_Empresa\\GoVagas\\GoVagas.csproj",
+        "projectPath": "C:\\Users\\GABRIELA\\Documents\\SENAI\\FrameWorkOfCoders\\Back-End\\API\\GoVagas\\GoVagas.csproj",
         "packagesPath": "C:\\Users\\GABRIELA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\GABRIELA\\Desktop\\GoVagas_API_Empresa\\GoVagas\\obj\\",
+        "outputPath": "C:\\Users\\GABRIELA\\Documents\\SENAI\\FrameWorkOfCoders\\Back-End\\API\\GoVagas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -63,14 +63,6 @@
               "target": "Package",
               "version": "[3.1.8, )"
             },
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[12.0.3, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[5.5.1, )"
-            },
             "Swashbuckle.AspNetCore.Swagger": {
               "target": "Package",
               "version": "[5.5.1, )"
@@ -82,6 +74,10 @@
             "Swashbuckle.AspNetCore.SwaggerUi": {
               "target": "Package",
               "version": "[5.5.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.7.1, )"
             }
           },
           "imports": [
